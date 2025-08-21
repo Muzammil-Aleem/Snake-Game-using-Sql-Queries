@@ -1,4 +1,5 @@
-﻿create table ludogameplay (
+
+create table ludogameplay (
     game_id int primary key identity(1,1),
     player_id int check (player_id in (1, 2)),
     dice_roll int check (dice_roll between 1 and 6),
@@ -77,4 +78,5 @@ begin
     end
 end;
 --for continuous running
+
 delete from ludogameplay
