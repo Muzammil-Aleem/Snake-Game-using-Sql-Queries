@@ -1,4 +1,3 @@
-
 create table ludogameplay (
     game_id int primary key identity(1,1),
     player_id int check (player_id in (1, 2)),
@@ -80,3 +79,4 @@ end;
 --for continuous running
 
 delete from ludogameplay
+
